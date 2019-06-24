@@ -23,3 +23,7 @@ public:
         return longestS.size();
     }
 };
+//Runtime: 380 ms
+//Memory Usage: 913.4 KB
+//time: O(n^2)
+//space: O(s + subs + longestS)
