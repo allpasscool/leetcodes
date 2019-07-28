@@ -122,7 +122,7 @@ public:
         return output;
     }
 };
-Runtime: 4 ms, faster than 81.42% of C++ online submissions for Divide Two Integers.
-Memory Usage: 8.1 MB, less than 84.73% of C++ online submissions for Divide Two Integers.
-time complexity: O(n)
-space complexity: O(1)
+// Runtime: 4 ms, faster than 81.42% of C++ online submissions for Divide Two Integers.
+// Memory Usage: 8.1 MB, less than 84.73% of C++ online submissions for Divide Two Integers.
+// time complexity: O(n)
+// space complexity: O(1)
