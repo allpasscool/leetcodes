@@ -42,7 +42,7 @@ public:
 // Runtime: 4 ms, faster than 67.57% of C++ online submissions for Reverse Linked List II.
 // Memory Usage: 8.6 MB, less than 87.50% of C++ online submissions for Reverse Linked List II.
 // time complexity: O(n)
-// space complexity: O(n)
+// space complexity: O(1)
 // https://zxi.mytechroad.com/blog/list/leetcode-92-reverse-linked-list-ii/
 
 // // Author: Huahua
