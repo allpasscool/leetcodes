@@ -46,6 +46,7 @@ public:
 // Memory Usage: 11 MB, less than 53.67% of C++ online submissions for Employee Free Time.
 // time complexity: O(n log n)
 // space complexity: O(n)
+// https://zxi.mytechroad.com/blog/geometry/leetcode-759-employee-free-time/
 
 // // Author: Huahua
 // // Running time: 81 ms
