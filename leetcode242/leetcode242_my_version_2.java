@@ -8,11 +8,7 @@ class Solution {
         // count s
         for(int i = 0; i < s.length(); i++) {
             char alpha = (char)(s.charAt(i) - 'a');
-            
-            if(alpha_count.containsKey(alpha))
-                alpha_count.put(alpha, alpha_count.get(alpha)+1);
-            else
-                alpha_count.put(alpha, 1);
+            alpha_count.put(alpha, alpha_count.getOrDefault(alpha, 0) + 1);
         }
         
         // used on t
