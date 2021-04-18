@@ -37,4 +37,4 @@ class Logger {
 // Runtime: 26 ms, faster than 82.54% of Java online submissions for Logger Rate Limiter.
 // Memory Usage: 46.9 MB, less than 58.96% of Java online submissions for Logger Rate Limiter.
 // time complexity: O(1)
-// space complexity: O(m) at most m unique different msg
+// space complexity: O(m) where m is the maximum number of unique message that will be received in a 20 second period.
