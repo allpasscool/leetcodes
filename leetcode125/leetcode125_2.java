@@ -7,7 +7,7 @@ class Solution {
             char c2 = s.charAt(right);
             
             // check c1 is alphabets and change to lower case
-            if (Character.isAlphabetic(c1)) {
+            if (Character.isLetter(c1)) {
                 c1 = Character.toLowerCase(c1);
             }
             // c1 is not alphabets nor digit
@@ -17,7 +17,7 @@ class Solution {
             }
             
             // check c2 is alphabets and change to lower case
-            if (Character.isAlphabetic(c2)) {
+            if (Character.isLetter(c2)) {
                 c2 = Character.toLowerCase(c2);
             }
             // c2 is not alphabets nor digit
