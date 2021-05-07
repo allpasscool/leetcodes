@@ -31,21 +31,13 @@ class Solution {
                 visited.add(String.valueOf(cur_x) + "x" + String.valueOf(cur_y) + "y");
                 
                 // add next possible 8 pos
-                // if (!visited.contains(String.valueOf(cur_x + 2) + "x" + String.valueOf(cur_y + 1) + "y"))
                 q.add(new int[]{cur_x + 2, cur_y + 1});
-                // if (!visited.contains(String.valueOf(cur_x + 1) + "x" + String.valueOf(cur_y + 2) + "y"))
                 q.add(new int[]{cur_x + 1, cur_y + 2});
-                // if (!visited.contains(String.valueOf(cur_x - 2) + "x" + String.valueOf(cur_y + 1) + "y"))
                 q.add(new int[]{cur_x - 2, cur_y + 1});
-                // if (!visited.contains(String.valueOf(cur_x - 1) + "x" + String.valueOf(cur_y + 2) + "y"))
                 q.add(new int[]{cur_x - 1, cur_y + 2});
-                // if (!visited.contains(String.valueOf(cur_x + 2) + "x" + String.valueOf(cur_y - 1) + "y"))
                 q.add(new int[]{cur_x + 2, cur_y - 1});
-                // if (!visited.contains(String.valueOf(cur_x + 1) + "x" + String.valueOf(cur_y - 2) + "y"))
                 q.add(new int[]{cur_x + 1, cur_y - 2});
-                // if (!visited.contains(String.valueOf(cur_x - 2) + "x" + String.valueOf(cur_y - 1) + "y"))
                 q.add(new int[]{cur_x - 2, cur_y - 1});
-                // if (!visited.contains(String.valueOf(cur_x - 1) + "x" + String.valueOf(cur_y - 2) + "y"))
                 q.add(new int[]{cur_x - 1, cur_y - 2});
             }
             
