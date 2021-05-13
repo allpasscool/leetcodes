@@ -1,7 +1,6 @@
 class Solution {
-    private Map<String, Integer> memo = new HashMap<>();
 
-    private int dfs(int x, int y) {
+    private int dfs(int x, int y, Map<String, Integer> memo) {
         String key = x + "," + y;
         if (memo.containsKey(key)) {
             return memo.get(key);
@@ -12,14 +11,16 @@ class Solution {
         } else if (x + y == 2) {
             return 2;
         } else {
-            Integer ret = Math.min(dfs(Math.abs(x - 1), Math.abs(y - 2)),
-                    dfs(Math.abs(x - 2), Math.abs(y - 1))) + 1;
+            int first_road = dfs(Math.abs(x - 1), Math.abs(y - 2);
+            int second_road = dfs(Math.abs(x - 2), Math.abs(y - 1));
+            Integer ret = Math.min(first_road, second_road, memo) + 1;
             memo.put(key, ret);
             return ret;
         }
     }
 
     public int minKnightMoves(int x, int y) {
+        Map<String, Integer> memo = new HashMap<>();
         return dfs(Math.abs(x), Math.abs(y));
     }
 }
