@@ -14,7 +14,8 @@ class Solution {
         {
             while (targets.containsKey(stack.peek()) && !targets.get(stack.peek()).isEmpty())
             {
-                stack.push(targets.get(stack.peek()).poll());
+                String next = targets.get(stack.peek()).poll();
+                stack.push(next);
             }
             route.add(0, stack.pop());
         }
