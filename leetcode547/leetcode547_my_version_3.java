@@ -6,15 +6,11 @@ class Solution {
         
         // traverse all cities
         for (int i = 0; i < n; i++) {
-            // checking all cities connected with city i
-            for (int j = i; j < n; j++) {
-                // haven't visited city j yet
-                if (isConnected[i][j] == 1
-                   && visited[j] == false) {
-                    count++;
-                    visited[j] = true;
-                    dfs(isConnected, visited, j);
-                }
+            // haven't visited city j yet
+            if (visited[i] == false) {
+                count++;
+                visited[i] = true;
+                dfs(isConnected, visited, i);
             }
         }
         
