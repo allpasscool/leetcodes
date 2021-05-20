@@ -3,11 +3,11 @@ class Solution {
         Map<String, PriorityQueue<String>> targets = new HashMap<>();
         
         for (List<String> ticket : tickets) {
-            if (targets.get(ticket.get(0)) == null)
-                targets.put(ticket.get(0), new PriorityQueue());
-            PriorityQueue<String> pq = targets.get(ticket.get(0));
-            pq.add(ticket.get(1));
-            // targets.computeIfAbsent(ticket.get(0), k -> new PriorityQueue()).add(ticket.get(1));
+            // if (targets.get(ticket.get(0)) == null)
+            //     targets.put(ticket.get(0), new PriorityQueue());
+            // PriorityQueue<String> pq = targets.get(ticket.get(0));
+            // pq.add(ticket.get(1));
+            targets.computeIfAbsent(ticket.get(0), k -> new PriorityQueue()).add(ticket.get(1));
         }
         
         List<String> route = new LinkedList();
