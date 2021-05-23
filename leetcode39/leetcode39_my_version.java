@@ -9,22 +9,22 @@ class Solution {
                 List<Integer> cur = new ArrayList<>();
                 // add this candidate
                 cur.add(candidates[i]);
-                backtracking(candidates, target, ans, cur, candidates[i], i);
+                backtracking(candidates, target - candidates[i], ans, cur, i);
             }
         }
         
         return ans;
     }
     
-    private void backtracking(int[] candidates, int target, List<List<Integer>> ans, List<Integer> cur, int sum, int start_index)
+    private void backtracking(int[] candidates, int remain, List<List<Integer>> ans, List<Integer> cur, int start_index)
     {
         // candidates in cur are too big
-        if (sum > target)
+        if (remain < 0)
         {
             return;
         }
         // find a valid answer
-        else if (sum == target)
+        else if (remain == 0)
         {
             ans.add(new ArrayList<Integer>(cur));
             return;
@@ -35,11 +35,9 @@ class Solution {
         {
             // add candidate
             cur.add(candidates[i]);
-            sum += candidates[i];
             // find next candidate
-            backtracking(candidates, target, ans, cur, sum, i);
+            backtracking(candidates, remain - candidates[i], ans, cur, i);
             // remove candidate
-            sum -= candidates[i];
             cur.remove(cur.size() - 1);
         }
     }
