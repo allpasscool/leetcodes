@@ -59,3 +59,4 @@ class Solution {
 // Memory Usage: 38.9 MB, less than 6.63% of Java online submissions for Search in Rotated Sorted Array.
 // time complexity: O(log n)
 // space complexity: O(1)
+//  ref: https://leetcode.com/problems/search-in-rotated-sorted-array/discuss/14436/Revised-Binary-Search
