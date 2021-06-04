@@ -7,6 +7,7 @@ class Solution {
         }
         double ans = 1;
         double current_product = x;
+        long cur = 1;
         // N = 11
         // i = 11 current_product = 2 == 2^1
         // i % 2 = 1 => ans *= 2 => ans = 2
@@ -25,6 +26,7 @@ class Solution {
                 ans = ans * current_product;
             }
             current_product = current_product * current_product;
+            cur = cur * cur;
         }
         return ans;
     }
