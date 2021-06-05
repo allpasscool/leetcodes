@@ -43,7 +43,7 @@ class Solution {
         }
 
         cur = head;
-        Node newCur = head.next;
+        Node newCur = newHead;
 
         while (cur.next.next != null) {
             Node next = cur.next.next;
