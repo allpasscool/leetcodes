@@ -20,4 +20,4 @@ class Solution {
 // Memory Usage: 39.2 MB, less than 69.54% of Java online submissions for Kth
 // Largest Element in an Array.
 // time complexity: O(n log (n - k))
-// space complexity: O(n = k)
+// space complexity: O(n - k)
