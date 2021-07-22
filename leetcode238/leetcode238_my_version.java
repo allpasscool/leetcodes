@@ -2,7 +2,7 @@
 // Memory Usage: 52.4 MB, less than 30.92% of Java online submissions for Product of Array Except Self.
 // time complexity: O(n)
 // space complexity: O(n)
-
+// same as Solution 1
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         int[] left = new int[nums.length];
